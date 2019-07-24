@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29025.244
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "旋转数字", "旋转数字\旋转数字.csproj", "{7C30C92C-0905-49A4-B9F6-A1E21A3F1ADB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7C30C92C-0905-49A4-B9F6-A1E21A3F1ADB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C30C92C-0905-49A4-B9F6-A1E21A3F1ADB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C30C92C-0905-49A4-B9F6-A1E21A3F1ADB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C30C92C-0905-49A4-B9F6-A1E21A3F1ADB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0FB28C43-D821-4EF7-81EE-606F8F8914F1}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,7 @@
+E:\HLX\Program\LeetCode\520检测大写字母\520检测大写字母\bin\Debug\520检测大写字母.exe.config
+E:\HLX\Program\LeetCode\520检测大写字母\520检测大写字母\bin\Debug\520检测大写字母.exe
+E:\HLX\Program\LeetCode\520检测大写字母\520检测大写字母\bin\Debug\520检测大写字母.pdb
+E:\HLX\Program\LeetCode\520检测大写字母\520检测大写字母\obj\Debug\520检测大写字母.csprojAssemblyReference.cache
+E:\HLX\Program\LeetCode\520检测大写字母\520检测大写字母\obj\Debug\520检测大写字母.csproj.CoreCompileInputs.cache
+E:\HLX\Program\LeetCode\520检测大写字母\520检测大写字母\obj\Debug\520检测大写字母.exe
+E:\HLX\Program\LeetCode\520检测大写字母\520检测大写字母\obj\Debug\520检测大写字母.pdb

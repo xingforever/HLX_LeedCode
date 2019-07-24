@@ -1,0 +1,7 @@
+E:\HLX\Program\LeetCode\22括号生产\22括号生产\obj\Debug\22括号生产.csprojAssemblyReference.cache
+E:\HLX\Program\LeetCode\22括号生产\22括号生产\obj\Debug\22括号生产.csproj.CoreCompileInputs.cache
+E:\HLX\Program\LeetCode\22括号生产\22括号生产\bin\Debug\22括号生产.exe.config
+E:\HLX\Program\LeetCode\22括号生产\22括号生产\bin\Debug\22括号生产.exe
+E:\HLX\Program\LeetCode\22括号生产\22括号生产\bin\Debug\22括号生产.pdb
+E:\HLX\Program\LeetCode\22括号生产\22括号生产\obj\Debug\22括号生产.exe
+E:\HLX\Program\LeetCode\22括号生产\22括号生产\obj\Debug\22括号生产.pdb

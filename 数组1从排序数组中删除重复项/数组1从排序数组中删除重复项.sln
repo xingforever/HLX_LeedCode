@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29025.244
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "数组1从排序数组中删除重复项", "数组1从排序数组中删除重复项\数组1从排序数组中删除重复项.csproj", "{EF03C640-6A19-44E6-8088-85697D285F00}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EF03C640-6A19-44E6-8088-85697D285F00}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF03C640-6A19-44E6-8088-85697D285F00}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF03C640-6A19-44E6-8088-85697D285F00}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF03C640-6A19-44E6-8088-85697D285F00}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D1ED216B-EF89-45A2-B35F-B880D0B1AED1}
+	EndGlobalSection
+EndGlobal

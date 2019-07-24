@@ -1,0 +1,7 @@
+E:\HLX\Program\LeetCode\旋转数字\旋转数字\bin\Debug\旋转数字.exe.config
+E:\HLX\Program\LeetCode\旋转数字\旋转数字\bin\Debug\旋转数字.exe
+E:\HLX\Program\LeetCode\旋转数字\旋转数字\bin\Debug\旋转数字.pdb
+E:\HLX\Program\LeetCode\旋转数字\旋转数字\obj\Debug\旋转数字.csprojAssemblyReference.cache
+E:\HLX\Program\LeetCode\旋转数字\旋转数字\obj\Debug\旋转数字.csproj.CoreCompileInputs.cache
+E:\HLX\Program\LeetCode\旋转数字\旋转数字\obj\Debug\旋转数字.exe
+E:\HLX\Program\LeetCode\旋转数字\旋转数字\obj\Debug\旋转数字.pdb
