@@ -27,44 +27,38 @@ namespace _40组合总和II
 
     public class Solution
     {
-        public List<int> Candidates;
-        public int Target;
-        public IList<IList<int>> res = new List<IList<int>>();
+        public List<int> Candidates; 
+        public IList<IList<int>> res = new List<IList<int>>();     
      
         public IList<IList<int>> CombinationSum2(int[] candidates, int target)
         {
             Candidates = candidates.ToList();
             Candidates.Sort();
-            Target = target;
-            backtrack(0,0, new List<int>());
+
+            FindCombinationSum2(0, Candidates.Count, target, new Stack<int>());
             return res ;
         }
+        // residue 表示剩余，这个值一开始等于 target，基于题目中说明的"所有数字（包括目标数）都是正整数"这个条件
+        // residue 在递归遍历中，只会越来越小
 
-        public void backtrack(int sum,int beign, List<int>data)
+        public void FindCombinationSum2( int begin, int len, int residue, Stack<int> stack)
         {
-            if (sum==Target)
+            if (residue==0)
             {
-                var datas = new List<int>(data.ToArray());
-                res.Add(datas);
-                
-                              
+                res.Add(new List<int>(stack.ToList()));
                 return;
             }
-            if (sum>Target)
+            for (int i = begin; i < len && residue - Candidates[i] >= 0; i++)
             {
-                return;
-            }
-            for (int i = beign; i < Candidates.Count; i++)
-            {
-                var da = Candidates[i];
-
-                if (i >= 1 && Candidates[i] == Candidates[i - 1])
+                if (i > begin && Candidates[i] == Candidates[i - 1])
+                {
                     continue;
-                beign += 1;
-                data.Add(da);
-              
-                backtrack(sum + da, beign, data);
-                data.RemoveAt(data.Count - 1);
+                }
+                stack.Push(Candidates[i]);
+                // 【关键】因为元素不可以重复使用，这里递归传递下去的是 i + 1 而不是 i
+                FindCombinationSum2(i + 1, len, residue - Candidates[i], stack);
+                stack.Pop();
+
             }
         }
     }

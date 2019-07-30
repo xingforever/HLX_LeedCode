@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Runtime;
@@ -26,36 +27,36 @@ namespace _39.组合总和
     {
         public List<IList<int>> res = new List<IList<int>>();
         List<int> CombinationList = new List<int>();
-        int Target;
+        Stack<int> dataList = new Stack<int>();
+     
+        private int len;
         public IList<IList<int>> CombinationSum(int[] candidates, int target)
         {
             CombinationList = candidates.ToList();
-            Target = target;
-            BackTrace(0, new List<int>());
+            CombinationList.Sort();
+            len = CombinationList.Count;        
+            findCombinationSum(target,0,  new Stack<int>());
             return res;
         }
 
-        public  void BackTrace(int begin,List<int>data)
-        {           
-            if (data.Count>Target)
+        public  void findCombinationSum(int residue, int start, Stack<int> dataList)
+        {
+            if (residue == 0)
             {
+                res.Add(new List<int>(dataList.ToArray()));
                 return;
             }
-            if (data.Count==Target)
+            for (int i = start; i < len && residue - CombinationList[i] >= 0; i++)
             {
-                res.Add(new List<int> (data.ToArray() )); ;
-                return ;
+                dataList.Push(CombinationList[i]);
+                // 【关键】因为元素可以重复使用，这里递归传递下去的是 i 而不是 i + 1
+                findCombinationSum(residue - CombinationList[i], i, dataList);
+                dataList.Pop();
             }
-            while (data.Count< Target)
-            {
-                data.Add(CombinationList[begin]);
-            }
-            for (int i = begin; i < CombinationList.Count; i++)
-            {
-                data.Add(CombinationList[i]);
-                BackTrace(i + 1, data);
-                data.RemoveAt(data.Count - 1);
-            }
+
         }
+
+
+     
     }
 }

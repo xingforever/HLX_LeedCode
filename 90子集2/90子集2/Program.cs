@@ -10,9 +10,9 @@ namespace _90子集2
     {
         static void Main(string[] args)
         {
-            int[] num = new int[] { 1, 2, 3 };
+            int[] num = new int[] { 1, 2 ,2};
             Solution solution = new Solution();
-            var res=solution.Subsets(num);
+            var res=solution.SubsetsWithDup(num);
             for (int i = 0; i < res.Count; i++)
             {
                 var data = res[i];
@@ -20,37 +20,44 @@ namespace _90子集2
             Console.ReadKey();
         }
     }
+    /// <summary>
+    /// 
+    /// </summary>
     public class Solution
     {
-        public List<IList<int>> res = new List<IList<int>>();
-        public List<int> numsList = new List<int>();
-        public IList<IList<int>> Subsets(int[] nums)
+        //先排序
+        //按顺序添加
+        //public List<IList<int>> res = new List<IList<int>>();
+        //public List<int> numsList = new List<int>();
+        public IList<IList<int>> SubsetsWithDup(int[] nums)
         {
-            numsList = nums.ToList();
+            List<IList<int>> res = new List<IList<int>>();           
+            var numsList = nums.ToList();
             numsList.Sort();
-            BackTrace(0, new List<int>());
-            res.Add(numsList);
+            BackTrace(numsList,0, new List<int>(), res);
+           // res.Add(numsList);
             return res;
         }
-        public void BackTrace(int begin, List<int> data)
+
+        private void BackTrace(List<int> numsList, int begin, List<int> data, List<IList<int>> res)
         {
-            
             var dataClone = new List<int>(data.ToArray());
             res.Add(dataClone);
 
-
             for (int i = begin; i < numsList.Count; i++)
-            {               
-                if (i>begin&&numsList[i]==numsList[i-1])
+            {
+                if (i > begin && numsList[i] == numsList[i - 1])
                 {
                     continue;
                 }
+
                 data.Add(numsList[i]);
-                begin += 1;
-                
-                BackTrace(begin, data);
+                BackTrace(numsList,begin + 1, data, res);
                 data.RemoveAt(data.Count - 1);
             }
         }
+
+       
+
     }
 }
